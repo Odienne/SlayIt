@@ -1,0 +1,40 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4ecb5730d80ed74f8211db4bb44e77d, type: 3}
+  m_Name: Heal
+  m_EditorClassIdentifier: Assembly-CSharp::CardData
+  <Description>k__BackingField: Heal 6 HP
+  <Mana>k__BackingField: 2
+  <Image>k__BackingField: {fileID: 21300000, guid: 3b7dcd49d12b5e644bd16964ef7e3dc9, type: 3}
+  <ManualTargetEffect>k__BackingField:
+    rid: -2
+  <OtherEffects>k__BackingField:
+  - rid: 5247743209739649289
+  references:
+    version: 2
+    RefIds:
+    - rid: -2
+      type: {class: , ns: , asm: }
+    - rid: 5247743209739649289
+      type: {class: AutoTargetEffect, ns: , asm: Assembly-CSharp}
+      data:
+        <TargetMode>k__BackingField:
+          rid: 5247743209739649292
+        <Effect>k__BackingField:
+          rid: 5247743209739649291
+    - rid: 5247743209739649291
+      type: {class: Heal, ns: , asm: Assembly-CSharp}
+      data:
+        healAmount: 6
+    - rid: 5247743209739649292
+      type: {class: AllHeroesTM, ns: , asm: Assembly-CSharp}
+      data: 

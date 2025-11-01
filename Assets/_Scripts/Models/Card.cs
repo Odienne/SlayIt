@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 using UnityEngine;
 
 public class Card
@@ -9,6 +10,8 @@ public class Card
     public Sprite Image => data.Image;
     public int Mana { get; private set; }
 
+    public Effect ManualTargetEffect => data.ManualTargetEffect;
+    public List<AutoTargetEffect> OtherEffects => data.OtherEffects;
 
     public Card(CardData cardData)
     {

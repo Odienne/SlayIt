@@ -1,0 +1,41 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4ecb5730d80ed74f8211db4bb44e77d, type: 3}
+  m_Name: Firestorm
+  m_EditorClassIdentifier: Assembly-CSharp::CardData
+  <Description>k__BackingField: Apply 3 burns to all enemies
+  <Mana>k__BackingField: 3
+  <Image>k__BackingField: {fileID: 21300000, guid: 16a0cd91ab67fff4792af67d3d8d6467, type: 3}
+  <ManualTargetEffect>k__BackingField:
+    rid: -2
+  <OtherEffects>k__BackingField:
+  - rid: 5772601003613880399
+  references:
+    version: 2
+    RefIds:
+    - rid: -2
+      type: {class: , ns: , asm: }
+    - rid: 5772601003613880399
+      type: {class: AutoTargetEffect, ns: , asm: Assembly-CSharp}
+      data:
+        <TargetMode>k__BackingField:
+          rid: 5772601003613880400
+        <Effect>k__BackingField:
+          rid: 5772601003613880401
+    - rid: 5772601003613880400
+      type: {class: AllEnemiesTM, ns: , asm: Assembly-CSharp}
+      data: 
+    - rid: 5772601003613880401
+      type: {class: AddStatusEffectEffect, ns: , asm: Assembly-CSharp}
+      data:
+        statusEffectType: 1
+        stackCount: 3
